@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site de Notícias do Boston Celtics</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="header-logo">
+      <!-- Celtics logo via SVG inline (no external image needed) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="55" height="55" style="background:white;border-radius:50%;padding:4px;">
+        <circle cx="50" cy="50" r="48" fill="#007A33" />
+        <text x="50" y="38" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="14" fill="white">BOSTON</text>
+        <text x="50" y="58" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="13" fill="#BA9653">CELTICS</text>
+        <text x="50" y="74" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="white">NBA</text>
+      </svg>
+    </div>
+
+    <h1 class="header-title">Site de Notícias do Boston Celtics</h1>
+
+    <nav>
+      <ul>
+        <li><a href="pages/arquivos.html">Arquivos</a></li>
+        <li><a href="pages/clube.html">Clube</a></li>
+        <li><a href="index.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main>
+
+    <!-- ===== NEWS SECTION ===== -->
+    <section class="news-section" id="noticias">
+      <div class="news-grid">
+
+        <!-- Card 1 -->
+        <article class="news-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/640px-24701-nature-natural-beauty.jpg"
+            onerror="this.src='https://placehold.co/280x160/007A33/white?text=Celtics+News'"
+            alt="Celtics vencem o campeonato"
+          />
+          <div class="news-card-body">
+            <h3>Celtics vencem o Campeonato!</h3>
+            <p>Um título histórico para Boston!</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="news-card">
+          <img
+            src="https://placehold.co/280x160/00531F/white?text=Jayson+Tatum"
+            alt="Tatum bate recorde"
+          />
+          <div class="news-card-body">
+            <h3>Tatum bate recorde de pontos</h3>
+            <p>Não estou acreditando no que vi!</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="news-card">
+          <img
+            src="https://placehold.co/280x160/1b3a2b/white?text=Garden+Explode"
+            alt="TD Garden em festa"
+          />
+          <div class="news-card-body">
+            <h3>Vergonha, Vergonha!</h3>
+            <p>Vergonha, Vergonha, Vergonha...</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="news-card">
+          <img
+            src="https://placehold.co/280x160/4CAF50/white?text=Celtics+Defesa"
+            alt="Melhor defesa da NBA"
+          />
+          <div class="news-card-body">
+            <h3>Vergonha, Vergonha!</h3>
+            <p>Vergonha, Vergonha, Vergonha...</p>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="news-card">
+          <img
+            src="https://placehold.co/280x160/BA9653/white?text=Draft+2024"
+            alt="Draft dos Celtics"
+          />
+          <div class="news-card-body">
+            <h3>Vergonha, Vergonha!</h3>
+            <p>Vergonha, Vergonha, Vergonha...</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== LINEUP SECTION ===== -->
+    <section class="lineup-section" id="escalacao">
+      <h2>Escalação</h2>
+
+      <div class="lineup-grid">
+
+        <!-- Player icon SVG reutilizável -->
+        <div class="player-card">
+          <div class="player-icon">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="12"/>
+              <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/>
+            </svg>
+          </div>
+          <span>Al Horford (C)</span>
+        </div>
+
+        <div class="player-card">
+          <div class="player-icon">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="12"/>
+              <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/>
+            </svg>
+          </div>
+          <span>Jaylen Brown</span>
+        </div>
+
+        <div class="player-card">
+          <div class="player-icon">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="12"/>
+              <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/>
+            </svg>
+          </div>
+          <span>Jayson Tatum</span>
+        </div>
+
+        <div class="player-card">
+          <div class="player-icon">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="12"/>
+              <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/>
+            </svg>
+          </div>
+          <span>Jrue Holiday e Payton</span>
+        </div>
+
+        <div class="player-card">
+          <div class="player-icon">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="12"/>
+              <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/>
+            </svg>
+          </div>
+          <span>Kristaps Porziņģis</span>
+        </div>
+
+        <div class="player-card">
+          <div class="player-icon">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="12"/>
+              <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/>
+            </svg>
+          </div>
+          <span>Sam Hauser e White</span>
+        </div>
+
+        <div class="player-card">
+          <div class="player-icon">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="12"/>
+              <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/>
+            </svg>
+          </div>
+          <span>Luke Kornet</span>
+        </div>
+
+        <div class="player-card">
+          <div class="player-icon">
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="22" r="12"/>
+              <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24"/>
+            </svg>
+          </div>
+          <span>Neemias Queta e Hauser</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Todos os direitos reservados ao professor Ícaro.</p>
+  </footer>
+
+</body>
+</html>
