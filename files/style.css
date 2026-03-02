@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* ===== CSS VARIABLES ===== */
+:root {
+  --celtics-green: #007A33;
+  --celtics-dark-green: #00531F;
+  --celtics-light-green: #4CAF50;
+  --celtics-gold: #BA9653;
+  --celtics-black: #1a1a1a;
+  --celtics-white: #FFFFFF;
+  --celtics-bg: #e8f5e9;
+  --celtics-bg-dark: #1b3a2b;
+  --celtics-card-bg: #c8e6c9;
+  --header-height: 70px;
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--celtics-bg);
+  color: var(--celtics-black);
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: var(--celtics-bg-dark);
+  color: var(--celtics-white);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-logo img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: white;
+  padding: 3px;
+}
+
+.header-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--celtics-white);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  flex: 1;
+  text-align: center;
+}
+
+/* ===== NAV ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+nav ul li a {
+  color: var(--celtics-gold);
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: var(--celtics-white);
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: 20px 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* ===== NEWS SECTION ===== */
+.news-section {
+  background-color: var(--celtics-card-bg);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.news-grid {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.news-card {
+  background: var(--celtics-white);
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 260px;
+  max-width: 280px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,122,51,0.3);
+}
+
+.news-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-card-body {
+  background-color: var(--celtics-green);
+  color: var(--celtics-white);
+  padding: 12px 14px;
+}
+
+.news-card-body h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.news-card-body p {
+  font-size: 0.78rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+/* ===== LINEUP SECTION ===== */
+.lineup-section {
+  background-color: var(--celtics-card-bg);
+  border-radius: 16px;
+  padding: 24px 20px;
+  margin-bottom: 25px;
+}
+
+.lineup-section h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--celtics-black);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lineup-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 30px;
+}
+
+.player-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 100px;
+}
+
+.player-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--celtics-bg-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-icon svg {
+  width: 38px;
+  height: 38px;
+  fill: var(--celtics-white);
+}
+
+.player-card span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--celtics-black);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--celtics-bg-dark);
+  color: var(--celtics-white);
+  text-align: center;
+  padding: 18px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* ===== PAGE STYLES (for subpages) ===== */
+.page-content {
+  background-color: var(--celtics-card-bg);
+  border-radius: 16px;
+  padding: 30px;
+  margin-top: 10px;
+}
+
+.page-content h1 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--celtics-dark-green);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--celtics-green);
+  padding-bottom: 10px;
+}
+
+.page-content p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.archive-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.archive-list li {
+  background: white;
+  border-left: 4px solid var(--celtics-green);
+  padding: 14px 18px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.archive-list li a {
+  color: var(--celtics-dark-green);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.archive-list li a:hover {
+  color: var(--celtics-celtics-light-green);
+  text-decoration: underline;
+}
+
+.archive-list li .date {
+  font-size: 0.78rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 14px 12px;
+  }
+
+  .news-card {
+    min-width: 220px;
+  }
+}
